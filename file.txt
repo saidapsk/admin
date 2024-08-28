@@ -1,0 +1,17 @@
+ saidakhan
+jenkins commands how to install 
+
+sudo yum -y update
+
+sudo systemctl reboot
+
+sudo amazon-linux-extras install java-openjdk11 -y
+
+sudo tee /etc/yum.repos.d/jenkins.repo<<EOF
+[jenkins]
+name=Jenkins
+baseurl=http://pkg.jenkins.io/redhat
+gpgcheck=0
+EOF
+738650149
+
